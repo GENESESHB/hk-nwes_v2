@@ -1,0 +1,234 @@
+.addservice {
+    position: fixed;
+    left: 20px;
+    bottom: 20px; /* Adjust bottom position as needed */
+    display: flex;
+    flex-direction: column;
+    z-index: 1001;
+}
+.addservice button svg {
+    margin-right: 5px; /* Adjust if you need spacing between icon and text */
+}
+.addservice button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #72d7e0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-shadow: 1px 12px 20px 0px rgba(19, 99, 217, 0.58);
+    transition: box-shadow 0.3s cubic-bezier(0.18, 0.98, 0.61, 1.05);
+    position: relative;
+}
+
+.addservice button span {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 40px);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.addservice button:hover span {
+    display: block;
+}
+
+.addservice button:hover {
+    box-shadow: 0 0 15px rgba(19, 99, 217, 0.78);
+}
+
+@media (max-width: 768px) {
+    .addservice {
+        left: 10px;
+        bottom: 10px;
+    }
+}
+
+/* Styling for other components and responsiveness */
+
+.controller-container {
+    background: linear-gradient(180deg, #ffffff 0%, #8ee3e05c 70%, #88faff82 100%);
+    width: 100%;
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.controller-profile {
+    padding: 20px;
+    background: linear-gradient(180deg, #ffffff 0%, #8ee3e05c 70%, #88faff82 100%);
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.controller-profile-header {
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.controller-profile-header h1 {
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    position: relative;
+    border-radius: 25px;
+    top: -20px;
+    margin-bottom: 20px;
+    width: max-content;
+    left: 64%;
+    font-size: 20px;
+}
+
+.controller-profile-header p {
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 59%;
+    position: relative;
+    right: -33%;
+    border-radius: 25px;
+}
+
+.controller-profile-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    right: -84%;
+}
+
+.controller-profile-links {
+    display: inline-flex;
+    font-size: xx-large;
+    padding: 10px;
+    position: relative;
+    width: fit-content;
+    left: 70%;
+}
+
+.items {
+    width: auto;
+    position: relative;
+    direction: rtl;
+}
+
+.card1 {
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    border-radius: 25px;
+    position: relative;
+    margin-left: 10px;
+    border-left: 1px solid #ccc;
+    box-shadow: 1px 12px 20px 0px rgb(217 19 19 / 58%);
+    transition: box-shadow 0.3s cubic-bezier(0.18, 0.98, 0.61, 1.05);
+    top: 24px;
+}
+
+.controller-info-item {
+    width: -webkit-fill-available;
+    margin-bottom: 15px;
+}
+
+.controller-info-item label {
+    font-weight: bold;
+    display: flow-root;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.controller-info-item input[type='text'],
+.controller-info-item input[type='tel'],
+.controller-info-item input[type='date'],
+.controller-info-item textarea {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.controller-info-item textarea {
+    width: calc(80% - 10px);
+    resize: vertical;
+}
+
+.controller-info-item input[type='file'] {
+    flex: 1 1 80%;
+    margin-top: 5px;
+}
+
+.controller-btn-group {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.controller-btn-group button {
+    padding: 10px 10px;
+    width: 100px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: #72d7e0;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 12px 20px 0px rgba(19, 99, 217, 0.58);
+    transition: box-shadow 0.3s cubic-bezier(0.18, 0.98, 0.61, 1.05);
+}
+
+.controller-btn-group button:hover {
+    box-shadow: 0 0 15px rgba(19, 99, 217, 0.78);
+}
+
+.controller-cancel-btn {
+    background-color: #ccc;
+    color: #444;
+}
+
+.controller-message {
+    position: fixed;
+    top: 80px;
+    width: 54%;
+    left: 24%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.controller-error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.controller-success-message {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+@media (max-width: 768px) {
+    .controller-profile-header img {
+        right: -64%;
+    }
+    .controller-profile-header h1 {
+        left: 10%;
+        font-size: 17px;
+    }
+}
